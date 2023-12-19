@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Tyuiu.LebedevIV.Sprint7.Project.V6.Lib
 {
-    public class Class1
+    public class DataService
     {
     }
 }
