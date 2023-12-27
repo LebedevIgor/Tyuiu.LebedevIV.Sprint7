@@ -31,10 +31,10 @@ namespace Tyuiu.LebedevIV.Sprint7.Project.V6
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormChart));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.PanelTopChart_LIV = new System.Windows.Forms.Panel();
             this.LabelNameChart_LIV = new System.Windows.Forms.Label();
             this.ButtonBackChart_LIV = new System.Windows.Forms.Button();
@@ -47,15 +47,15 @@ namespace Tyuiu.LebedevIV.Sprint7.Project.V6
             this.ButtonDelete_LIV = new System.Windows.Forms.Button();
             this.ButtonSave_LIV = new System.Windows.Forms.Button();
             this.DataGridViewChart_LIV = new System.Windows.Forms.DataGridView();
-            this.OpenFileDialogChart_LIV = new System.Windows.Forms.OpenFileDialog();
-            this.PanelLeftChart_LIV = new System.Windows.Forms.Panel();
-            this.Chart_LIV = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.SaveFileDialogChart_LIV = new System.Windows.Forms.SaveFileDialog();
             this.CodeCh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DataNameCh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CategoryCh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.QuantityCh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PriceCh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OpenFileDialogChart_LIV = new System.Windows.Forms.OpenFileDialog();
+            this.PanelLeftChart_LIV = new System.Windows.Forms.Panel();
+            this.Chart_LIV = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.SaveFileDialogChart_LIV = new System.Windows.Forms.SaveFileDialog();
             this.PanelTopChart_LIV.SuspendLayout();
             this.GroupBoxChart_LIV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewChart_LIV)).BeginInit();
@@ -70,8 +70,9 @@ namespace Tyuiu.LebedevIV.Sprint7.Project.V6
             this.PanelTopChart_LIV.Controls.Add(this.ButtonBackChart_LIV);
             this.PanelTopChart_LIV.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelTopChart_LIV.Location = new System.Drawing.Point(0, 0);
+            this.PanelTopChart_LIV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PanelTopChart_LIV.Name = "PanelTopChart_LIV";
-            this.PanelTopChart_LIV.Size = new System.Drawing.Size(1264, 100);
+            this.PanelTopChart_LIV.Size = new System.Drawing.Size(1595, 123);
             this.PanelTopChart_LIV.TabIndex = 0;
             // 
             // LabelNameChart_LIV
@@ -79,9 +80,10 @@ namespace Tyuiu.LebedevIV.Sprint7.Project.V6
             this.LabelNameChart_LIV.AutoSize = true;
             this.LabelNameChart_LIV.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.LabelNameChart_LIV.ForeColor = System.Drawing.Color.White;
-            this.LabelNameChart_LIV.Location = new System.Drawing.Point(441, 24);
+            this.LabelNameChart_LIV.Location = new System.Drawing.Point(588, 30);
+            this.LabelNameChart_LIV.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LabelNameChart_LIV.Name = "LabelNameChart_LIV";
-            this.LabelNameChart_LIV.Size = new System.Drawing.Size(401, 39);
+            this.LabelNameChart_LIV.Size = new System.Drawing.Size(501, 52);
             this.LabelNameChart_LIV.TabIndex = 14;
             this.LabelNameChart_LIV.Text = "Диаграмма пациентов";
             // 
@@ -90,9 +92,10 @@ namespace Tyuiu.LebedevIV.Sprint7.Project.V6
             this.ButtonBackChart_LIV.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ButtonBackChart_LIV.BackgroundImage")));
             this.ButtonBackChart_LIV.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ButtonBackChart_LIV.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonBackChart_LIV.Location = new System.Drawing.Point(13, 13);
+            this.ButtonBackChart_LIV.Location = new System.Drawing.Point(17, 16);
+            this.ButtonBackChart_LIV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ButtonBackChart_LIV.Name = "ButtonBackChart_LIV";
-            this.ButtonBackChart_LIV.Size = new System.Drawing.Size(78, 47);
+            this.ButtonBackChart_LIV.Size = new System.Drawing.Size(104, 58);
             this.ButtonBackChart_LIV.TabIndex = 0;
             this.ToolTipChart_LIV.SetToolTip(this.ButtonBackChart_LIV, "Вернуться на главную страницу");
             this.ButtonBackChart_LIV.UseVisualStyleBackColor = true;
@@ -101,10 +104,12 @@ namespace Tyuiu.LebedevIV.Sprint7.Project.V6
             // GroupBoxChart_LIV
             // 
             this.GroupBoxChart_LIV.Controls.Add(this.ComboBoxChart_LIV);
-            this.GroupBoxChart_LIV.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.GroupBoxChart_LIV.Location = new System.Drawing.Point(863, 106);
+            this.GroupBoxChart_LIV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.GroupBoxChart_LIV.Location = new System.Drawing.Point(1151, 130);
+            this.GroupBoxChart_LIV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GroupBoxChart_LIV.Name = "GroupBoxChart_LIV";
-            this.GroupBoxChart_LIV.Size = new System.Drawing.Size(213, 63);
+            this.GroupBoxChart_LIV.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GroupBoxChart_LIV.Size = new System.Drawing.Size(222, 72);
             this.GroupBoxChart_LIV.TabIndex = 3;
             this.GroupBoxChart_LIV.TabStop = false;
             this.GroupBoxChart_LIV.Text = "Выбор категории";
@@ -120,9 +125,10 @@ namespace Tyuiu.LebedevIV.Sprint7.Project.V6
             "Онкология",
             "Заболевания МИП",
             "Все"});
-            this.ComboBoxChart_LIV.Location = new System.Drawing.Point(6, 23);
+            this.ComboBoxChart_LIV.Location = new System.Drawing.Point(8, 28);
+            this.ComboBoxChart_LIV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ComboBoxChart_LIV.Name = "ComboBoxChart_LIV";
-            this.ComboBoxChart_LIV.Size = new System.Drawing.Size(191, 33);
+            this.ComboBoxChart_LIV.Size = new System.Drawing.Size(195, 33);
             this.ComboBoxChart_LIV.TabIndex = 0;
             this.ComboBoxChart_LIV.SelectedIndexChanged += new System.EventHandler(this.ComboBoxChart_LIV_SelectedIndexChanged);
             // 
@@ -136,9 +142,10 @@ namespace Tyuiu.LebedevIV.Sprint7.Project.V6
             this.ButtonOpenChart_LIV.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ButtonOpenChart_LIV.BackgroundImage")));
             this.ButtonOpenChart_LIV.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ButtonOpenChart_LIV.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonOpenChart_LIV.Location = new System.Drawing.Point(513, 106);
+            this.ButtonOpenChart_LIV.Location = new System.Drawing.Point(684, 130);
+            this.ButtonOpenChart_LIV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ButtonOpenChart_LIV.Name = "ButtonOpenChart_LIV";
-            this.ButtonOpenChart_LIV.Size = new System.Drawing.Size(79, 63);
+            this.ButtonOpenChart_LIV.Size = new System.Drawing.Size(105, 78);
             this.ButtonOpenChart_LIV.TabIndex = 8;
             this.ToolTipChart_LIV.SetToolTip(this.ButtonOpenChart_LIV, "Загрузить данные");
             this.ButtonOpenChart_LIV.UseVisualStyleBackColor = true;
@@ -148,13 +155,14 @@ namespace Tyuiu.LebedevIV.Sprint7.Project.V6
             // 
             this.ButtonDoneChart_LIV.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ButtonDoneChart_LIV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonDoneChart_LIV.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ButtonDoneChart_LIV.Location = new System.Drawing.Point(1082, 106);
+            this.ButtonDoneChart_LIV.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.ButtonDoneChart_LIV.Location = new System.Drawing.Point(1381, 143);
+            this.ButtonDoneChart_LIV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ButtonDoneChart_LIV.Name = "ButtonDoneChart_LIV";
-            this.ButtonDoneChart_LIV.Size = new System.Drawing.Size(170, 63);
+            this.ButtonDoneChart_LIV.Size = new System.Drawing.Size(178, 59);
             this.ButtonDoneChart_LIV.TabIndex = 10;
             this.ButtonDoneChart_LIV.Text = "Выполнить";
-            this.ToolTipChart_LIV.SetToolTip(this.ButtonDoneChart_LIV, "Построить диаграмму стоимости продукта");
+            this.ToolTipChart_LIV.SetToolTip(this.ButtonDoneChart_LIV, "Построить диаграму срока потери трудоспсобности");
             this.ButtonDoneChart_LIV.UseVisualStyleBackColor = false;
             this.ButtonDoneChart_LIV.Click += new System.EventHandler(this.ButtonDoneChart_LIV_Click);
             // 
@@ -163,9 +171,10 @@ namespace Tyuiu.LebedevIV.Sprint7.Project.V6
             this.ButtonChartAdd_LIV.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ButtonChartAdd_LIV.BackgroundImage")));
             this.ButtonChartAdd_LIV.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ButtonChartAdd_LIV.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonChartAdd_LIV.Location = new System.Drawing.Point(683, 106);
+            this.ButtonChartAdd_LIV.Location = new System.Drawing.Point(911, 130);
+            this.ButtonChartAdd_LIV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ButtonChartAdd_LIV.Name = "ButtonChartAdd_LIV";
-            this.ButtonChartAdd_LIV.Size = new System.Drawing.Size(79, 63);
+            this.ButtonChartAdd_LIV.Size = new System.Drawing.Size(105, 78);
             this.ButtonChartAdd_LIV.TabIndex = 13;
             this.ToolTipChart_LIV.SetToolTip(this.ButtonChartAdd_LIV, "Добавить строку");
             this.ButtonChartAdd_LIV.UseVisualStyleBackColor = true;
@@ -176,9 +185,10 @@ namespace Tyuiu.LebedevIV.Sprint7.Project.V6
             this.ButtonDelete_LIV.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ButtonDelete_LIV.BackgroundImage")));
             this.ButtonDelete_LIV.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ButtonDelete_LIV.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonDelete_LIV.Location = new System.Drawing.Point(768, 106);
+            this.ButtonDelete_LIV.Location = new System.Drawing.Point(1024, 130);
+            this.ButtonDelete_LIV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ButtonDelete_LIV.Name = "ButtonDelete_LIV";
-            this.ButtonDelete_LIV.Size = new System.Drawing.Size(79, 63);
+            this.ButtonDelete_LIV.Size = new System.Drawing.Size(105, 78);
             this.ButtonDelete_LIV.TabIndex = 19;
             this.ToolTipChart_LIV.SetToolTip(this.ButtonDelete_LIV, "Удалить строку");
             this.ButtonDelete_LIV.UseVisualStyleBackColor = true;
@@ -189,9 +199,10 @@ namespace Tyuiu.LebedevIV.Sprint7.Project.V6
             this.ButtonSave_LIV.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ButtonSave_LIV.BackgroundImage")));
             this.ButtonSave_LIV.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ButtonSave_LIV.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonSave_LIV.Location = new System.Drawing.Point(598, 106);
+            this.ButtonSave_LIV.Location = new System.Drawing.Point(797, 130);
+            this.ButtonSave_LIV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ButtonSave_LIV.Name = "ButtonSave_LIV";
-            this.ButtonSave_LIV.Size = new System.Drawing.Size(79, 63);
+            this.ButtonSave_LIV.Size = new System.Drawing.Size(105, 78);
             this.ButtonSave_LIV.TabIndex = 20;
             this.ToolTipChart_LIV.SetToolTip(this.ButtonSave_LIV, "Сохранить данные");
             this.ButtonSave_LIV.UseVisualStyleBackColor = true;
@@ -208,11 +219,48 @@ namespace Tyuiu.LebedevIV.Sprint7.Project.V6
             this.PriceCh});
             this.DataGridViewChart_LIV.Dock = System.Windows.Forms.DockStyle.Left;
             this.DataGridViewChart_LIV.Location = new System.Drawing.Point(0, 0);
+            this.DataGridViewChart_LIV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DataGridViewChart_LIV.Name = "DataGridViewChart_LIV";
             this.DataGridViewChart_LIV.RowHeadersVisible = false;
+            this.DataGridViewChart_LIV.RowHeadersWidth = 51;
             this.DataGridViewChart_LIV.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.DataGridViewChart_LIV.Size = new System.Drawing.Size(504, 581);
+            this.DataGridViewChart_LIV.Size = new System.Drawing.Size(672, 715);
             this.DataGridViewChart_LIV.TabIndex = 4;
+            // 
+            // CodeCh
+            // 
+            this.CodeCh.HeaderText = "Код";
+            this.CodeCh.MinimumWidth = 6;
+            this.CodeCh.Name = "CodeCh";
+            this.CodeCh.Width = 125;
+            // 
+            // DataNameCh
+            // 
+            this.DataNameCh.HeaderText = "ФИО";
+            this.DataNameCh.MinimumWidth = 6;
+            this.DataNameCh.Name = "DataNameCh";
+            this.DataNameCh.Width = 125;
+            // 
+            // CategoryCh
+            // 
+            this.CategoryCh.HeaderText = "Диагноз";
+            this.CategoryCh.MinimumWidth = 6;
+            this.CategoryCh.Name = "CategoryCh";
+            this.CategoryCh.Width = 125;
+            // 
+            // QuantityCh
+            // 
+            this.QuantityCh.HeaderText = "Общий срок потери трудоспособности";
+            this.QuantityCh.MinimumWidth = 6;
+            this.QuantityCh.Name = "QuantityCh";
+            this.QuantityCh.Width = 125;
+            // 
+            // PriceCh
+            // 
+            this.PriceCh.HeaderText = "Длительность последней потери трудоспособности";
+            this.PriceCh.MinimumWidth = 6;
+            this.PriceCh.Name = "PriceCh";
+            this.PriceCh.Width = 125;
             // 
             // OpenFileDialogChart_LIV
             // 
@@ -222,63 +270,40 @@ namespace Tyuiu.LebedevIV.Sprint7.Project.V6
             // 
             this.PanelLeftChart_LIV.Controls.Add(this.DataGridViewChart_LIV);
             this.PanelLeftChart_LIV.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PanelLeftChart_LIV.Location = new System.Drawing.Point(0, 100);
+            this.PanelLeftChart_LIV.Location = new System.Drawing.Point(0, 123);
+            this.PanelLeftChart_LIV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PanelLeftChart_LIV.Name = "PanelLeftChart_LIV";
-            this.PanelLeftChart_LIV.Size = new System.Drawing.Size(507, 581);
+            this.PanelLeftChart_LIV.Size = new System.Drawing.Size(676, 715);
             this.PanelLeftChart_LIV.TabIndex = 9;
             // 
             // Chart_LIV
             // 
-            chartArea2.Name = "ChartArea1";
-            this.Chart_LIV.ChartAreas.Add(chartArea2);
-            legend2.Enabled = false;
-            legend2.Name = "Legend1";
-            this.Chart_LIV.Legends.Add(legend2);
-            this.Chart_LIV.Location = new System.Drawing.Point(513, 175);
+            chartArea1.Name = "ChartArea1";
+            this.Chart_LIV.ChartAreas.Add(chartArea1);
+            legend1.Enabled = false;
+            legend1.Name = "Legend1";
+            this.Chart_LIV.Legends.Add(legend1);
+            this.Chart_LIV.Location = new System.Drawing.Point(684, 216);
+            this.Chart_LIV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Chart_LIV.Name = "Chart_LIV";
             this.Chart_LIV.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
-            series2.ChartArea = "ChartArea1";
-            series2.IsVisibleInLegend = false;
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.Chart_LIV.Series.Add(series2);
-            this.Chart_LIV.Size = new System.Drawing.Size(739, 386);
+            series1.ChartArea = "ChartArea1";
+            series1.IsVisibleInLegend = false;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.Chart_LIV.Series.Add(series1);
+            this.Chart_LIV.Size = new System.Drawing.Size(875, 474);
             this.Chart_LIV.TabIndex = 1;
             this.Chart_LIV.Text = "chart1";
-            title2.Name = "Title";
-            title2.Text = "Обший срок потери трудоспособности";
-            this.Chart_LIV.Titles.Add(title2);
-            // 
-            // CodeCh
-            // 
-            this.CodeCh.HeaderText = "Код";
-            this.CodeCh.Name = "CodeCh";
-            // 
-            // DataNameCh
-            // 
-            this.DataNameCh.HeaderText = "ФИО";
-            this.DataNameCh.Name = "DataNameCh";
-            // 
-            // CategoryCh
-            // 
-            this.CategoryCh.HeaderText = "Диагноз";
-            this.CategoryCh.Name = "CategoryCh";
-            // 
-            // QuantityCh
-            // 
-            this.QuantityCh.HeaderText = "Общий срок потери трудоспособности";
-            this.QuantityCh.Name = "QuantityCh";
-            // 
-            // PriceCh
-            // 
-            this.PriceCh.HeaderText = "Длительность последней потери трудоспособности";
-            this.PriceCh.Name = "PriceCh";
+            title1.Name = "Title";
+            title1.Text = "Обший срок потери трудоспособности";
+            this.Chart_LIV.Titles.Add(title1);
             // 
             // FormChart
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.ClientSize = new System.Drawing.Size(1595, 838);
             this.Controls.Add(this.ButtonSave_LIV);
             this.Controls.Add(this.ButtonDelete_LIV);
             this.Controls.Add(this.Chart_LIV);
@@ -288,6 +313,7 @@ namespace Tyuiu.LebedevIV.Sprint7.Project.V6
             this.Controls.Add(this.GroupBoxChart_LIV);
             this.Controls.Add(this.PanelLeftChart_LIV);
             this.Controls.Add(this.PanelTopChart_LIV);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormChart";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.PanelTopChart_LIV.ResumeLayout(false);
